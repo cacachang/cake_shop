@@ -1,0 +1,8 @@
+<h1>編輯個人資訊</h1>
+
+<form action="{% url 'edit' user.id %}" method="post">
+  {% csrf_token %}
+  {{ form }}
+
+  <input type="submit">
+</form>
